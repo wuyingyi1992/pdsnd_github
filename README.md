@@ -2,7 +2,7 @@
 05/05/19
 
 ### Project Title
-Replace the Project Title
+Udacity Project 3 -- Version Control
 
 ### Description
 Describe what your project is about and what it does
