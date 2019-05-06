@@ -178,6 +178,7 @@ def user_stats(df):
     print('-'*40)
 
 def display_data(df):
+    """Displays raw data five lines by five lines."""
     i=0
     while True:
         decision = input('\nDo you want to see the raw data(yes/no):\n').lower()
