@@ -1,3 +1,9 @@
+"""
+This project is used to explore US Bikeshare Data
+- Use Python to undertand U.S. bikeshare data
+- Calculate statistics and build an interactive environment where a user chooses the data and filter for a dataset to analyze 
+"""
+
 import time
 import pandas as pd
 import numpy as np
@@ -118,8 +124,6 @@ def station_stats(df):
     gp=df.groupby(by=['Start Station', 'End Station'])
     newdf=gp.size()
     print('Most frequent combination of start station and end station trip:',newdf.idxmax())
-    
-    
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -160,7 +164,6 @@ def user_stats(df):
     else:
         print('There is no Gender in the file')
 
-
     # TO DO: Display earliest, most recent, and most common year of birth
     if 'Birth Year' in df.columns:
         print('\nEarliest year of birth: ',df['Birth Year'].min() )
@@ -171,7 +174,9 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+
 def display_data(df):
+    """Displays raw data five lines by five lines."""
     i=0
     while True:
         decision = input('\nDo you want to see the raw data(yes/no):\n').lower()
